@@ -9,10 +9,16 @@ gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'terminal-notifier-guard'
 end
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'terminal-notifier-guard'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 
