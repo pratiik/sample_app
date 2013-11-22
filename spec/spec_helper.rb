@@ -23,5 +23,6 @@ config.use_transactional_fixtures = true
 config.infer_base_class_for_anonymous_controllers = false
 end end
 Spork.each_run do
+	Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 # This code will be run each time you run your specs.
 end
