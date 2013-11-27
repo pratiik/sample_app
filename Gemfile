@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.0.0'
 gem 'thin'
+gem 'bcrypt-ruby', '3.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,6 +14,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
+  gem 'annotate'
 end
 
 group :test do
@@ -21,6 +23,7 @@ group :test do
   gem 'terminal-notifier-guard'
   gem 'guard-spork'
   gem 'spork'
+  gem 'annotate'
 end
 
 
